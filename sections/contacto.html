@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronostico - desde la cueva</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body id="body-b">
+    <nav class="nav">
+        <div class="nav__div">
+            <a href="../index.html">
+            <img class="nav__img" src="../img/logo.png" alt="la imagen muestra el logo de pronostico desde la cueva"></a>
+        </div>
+        <ul class="nav__ul">
+            <li class="nav__li">
+                <a class="nav__link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav__li">
+                <a class="nav__link" href="../sections/pronostico_extendido.html">Pronostico Extendido</a>
+            </li>
+            <li class="nav__li">
+                <a class="nav__link" href="../sections/rios.html">Rios</a>
+            </li>
+            <li class="nav__li">
+                <a class="nav__link" href="../sections/alertas.html">Alertas</a>
+            </li>
+            <li class="nav__li">
+                <a class="nav__link" href="../sections/contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- ends nav -->
+    <header class="header">
+        <h1>Contacto</h1>
+    </header>
+    <!-- ends header -->
+    <main class="main">
+        <section class="main__section">
+            <h2>El clima en tu zona</h2>
+            <p class="main__parr">Queres enterarte de las ultimas novedades del clima en tu zona? Completa tus datos debajo para mantenerte actualizado</p>
+            <form class="main__form" action="envio.php">
+                <fieldset class="form__fieldset">
+                    <legend class="form__legend">Datos de contacto</legend>
+                        <div><label class="form__label" for="nombre">Nombre:</label>
+                        <input class="form__input" type="text" id="nombre" placeholder="Nombre y Apellido"></div>
+                        <div><label class="form__label" for="email">Email:</label>
+                        <input class="form__input" type="email" id="email" placeholder="ejemplo@mail.com"></div>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <legend class="form__legend">Datos geograficos</legend>
+                        <label class="form__label" for="provincia">Provincia</label>
+                        <select class="form__input" name="" id="provincia">
+                            <option value="caba">Ciudad Autonoma de Buenos Aires</option>
+                            <option value="bsas">Buenos Aires </option></select>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <legend class="form__legend">Preferencias</legend>
+                        <div class="fieldset__div"><label for="clima para el dia siguiente">Clima para el dia siguiente</label>
+                        <input type="checkbox" id="clima para el dia siguiente" value="clima para el dia siguiente"></div>
+                        <div class="fieldset__div"><label for="alertas metereologicas">Alertas metereologicas</label>
+                        <input type="checkbox" id="alertas metereologicas" value="alertas metereologicas"></div>
+                        <div class="fieldset__div"><label for="ultimas noticias del clima">Ultimas noticias del clima</label>
+                        <input type="checkbox" id="ultimas noticias del clima" value="ultimas noticias del dia"></div>
+                        <div class="fieldset__div"><label for="niveles del rio">Niveles del rio</label>
+                        <input type="checkbox" id="niveles del rio" value="niveles del rio"></div>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <legend class="form__legend">Frecuencia</legend>
+                        <div class="fieldset__div"><label for="diaria">Diaria</label>
+                        <input type="radio" id="diaria" value="diaria" name="frecuencia"></div>
+                        <div class="fieldset__div"><label for="cada dos dias">Cada dos dias</label>
+                        <input type="radio" id="cada dos dias" value="cada dos dias" name="frecuencia"></div>
+                        <div class="fieldset__div"><label for="una vez por semana">Una vez por semana</label>
+                        <input type="radio" id="una vez por semana" value="una vez por semana" name="frecuencia"></div>
+                        <div class="fieldset__div"><label for="quincenal">Quincenal</label>
+                        <input type="radio" id="quincenal" value="quincenal" name="frecuencia"></div>
+                </fieldset>
+                <div>
+                    <input class="button" type="reset" value="Cancelar">
+                    <input class="button" type="submit" value="Enviar">
+                </div>
+            </form>
+            <!-- ends form -->
+        </section>
+        <!-- ends section -->
+    </main>
+    <!-- ends main -->
+    <footer class="footer">
+        <ul class="footer__ul">
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                <img class="footer__img" src="../img/logo_ig.png" alt="En la imagen se muestra el logo de instagram"></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                <img class="footer__img" src="../img/logo_facebook.png" alt="En la imagen se muestra el logo de instagram"></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/login?lang=es" target="_blank">
+                <img class="footer__img" src="../img/logo_twitter.png" alt="En la imagen se muestra el logo de instagram"></a>
+            </li>
+        </ul>
+        <section>
+            <p class="footer__parr">Copyright © 2022 Pronostico - desde la cueva</p>
+            <p class="footer__parr" >Todos los derechos reservados</p>
+        </section>
+    </footer>
+</body>
+</html>

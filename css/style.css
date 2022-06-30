@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+    padding: 0%;    
+}
+h1{
+    font-size: 2rem;
+    margin: 1%;
+}
+h2{
+    font-size: 1.5rem;
+    margin: 1%;
+}
+h3{
+    font-size: 1rem;
+    margin: 1%;
+}
+
+
+/* ----- begins body ----- */
+#body-a{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "main" "footer";
+}
+#body-b{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "header" "main" "footer";
+}
+/* ----- ends body ----- */
+
+/* ----- begins nav ----- */
+.nav{
+    list-style: none;
+    background-color: rgb(1, 31, 38);
+    grid-area: nav;
+    width: 100%;
+}
+.nav__div{
+    text-align: center;
+}
+.nav__link{
+    text-decoration: none;
+    color: rgb(242, 242, 242);
+    font-size: 1.5rem;
+    margin: 1%;
+}
+.nav__img{
+    width: 20%;
+    margin: 1%;
+}
+.nav__li{
+    width: 80%;
+}
+/* ----- ends nav ----- */
+
+/* ----- begins header ----- */
+.header{
+    grid-area: header;
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+}
+/* -----ends header ----- */
+
+/* ----- begins main ----- */
+.main{
+    background-color: rgb(242, 242, 242);
+    grid-area: main;
+}
+.main__section{
+    width: 100%;
+}
+.main__parr{
+    font-size: 1.0rem;
+    width: 100%;
+    margin: 1%;
+}
+.main__form{
+    width: 100%;
+    margin: 1%;
+}
+.main__article{
+    width: 48%;
+    margin: 2%;
+}
+.main__img{
+    width: 80%;
+}
+/* ----- ends main ----- */
+
+/* -----begins form ----- */
+.form__fieldset{
+    width: 90%;
+    margin: 1%;
+    padding: 1%;
+}
+.form__legend{
+    font-size: 1.5rem;
+}
+.form__label{
+    width: 20%;
+    margin: 1%;
+    font-size: 1rem;
+}
+.form__input{
+    width: 70%;
+    margin: 1%;
+    padding: 1%;
+}
+.fieldset__div{
+    margin-bottom: 1%;
+}
+/* ----- ends form ----- */
+
+/* ----- button begin ----- */
+.button{
+    background-color: rgb(2, 94, 115);
+    color: rgb(242, 242, 242);
+    border: solid 5% rgb(1, 1, 1);
+    padding: 1.5%;
+    margin: 2% 0% 2% 2%;
+}
+
+/* ----- button ends ----- */
+
+/* ----- begins footer ----- */
+.footer{
+    background-color: rgb(1, 31, 38);
+    grid-area: footer;
+    width: 100%;
+}
+.footer__ul{
+    width: 20%;
+    display: flex;
+    list-style: none;
+}
+.footer__img{
+    width: 100%;
+}
+.footer__parr{
+    text-decoration: none;
+    color: rgb(242, 242, 242);
+    font-size: 1.0rem;
+    width: 100%;
+}
+/* -----ends footer ----- */
+
+/* ----- media queries tablet ----- */
+
+@media only screen and (min-device-width:768px) {
+    #body-a{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "nav nav" 
+    "main main" 
+    "footer footer";
+    }
+    #body-b{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "nav nav"
+        "header header"
+        "main main" 
+        "footer footer";
+    }
+    .nav__div{
+        width: 100%;
+    }
+    .nav__ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        list-style: none;
+        align-items: center;
+        text-align: center;
+    }
+}
+/* ----- media queries desktop ----- */
+
+@media only screen and (min-device-width:1024px) {
+    #body-a{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "nav nav nav" 
+    "main main main" 
+    "footer footer footer";
+    }
+    #body-b{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "nav nav nav"
+        "header header header"
+        "main main main" 
+        "footer footer footer";
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav__div{
+        width: 10%;
+        padding: 1%;
+    }
+    .nav__img{
+        width: 100%;
+    }
+    .nav__ul{
+        list-style: none;
+        display: flex;
+        width: 85%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav__li :hover{
+        border-radius: 2.5%;
+        background-color: rgb(3, 127, 140);
+        padding: 5%;
+    }
+}
