@@ -37,8 +37,6 @@ h3{
     background-color: rgb(1, 31, 38);
     grid-area: nav;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
 }
 .nav__div{
     text-align: center;
@@ -48,7 +46,6 @@ h3{
     color: rgb(242, 242, 242);
     font-size: 1.5rem;
     margin: 1%;
-
 }
 .nav__img{
     width: 20%;
@@ -56,13 +53,6 @@ h3{
 }
 .nav__li{
     width: 80%;
-}
-nav div img{
-    width: 100%;
-    margin: 1%;
-} 
-#bt__color{
-    color: rgb(242, 242, 242);
 }
 /* ----- ends nav ----- */
 
@@ -179,19 +169,12 @@ nav div img{
         "main main" 
         "footer footer";
     }
-    .nav{
-        display: flex;
-        justify-content: space-between;
-    }
-    .nav__img{
-        width: 10%;
-    }
     .nav__div{
         width: 100%;
     }
     .nav__ul{
         display: flex;
-        width: 85%;
+        width: 100%;
         justify-content: space-between;
         list-style: none;
         align-items: center;
@@ -225,18 +208,17 @@ nav div img{
         "main main main" 
         "footer footer footer";
     }
-    /* .nav__div{
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav__div{
         width: 10%;
         padding: 1%;
-        display: flex;
-        justify-content: space-around;
-    } */
+    }
     .nav__img{
-<<<<<<< HEAD
-        width: 10%;
-=======
         width: 40%;
->>>>>>> 1266556
     }
     .nav__ul{
         list-style: none;
@@ -248,6 +230,7 @@ nav div img{
     .nav__li :hover{
         border-radius: 2.5%;
         background-color: rgb(3, 127, 140);
+        padding: 5%;
     }
     .main__section{
         display: flex;
