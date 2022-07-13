@@ -1,0 +1,10 @@
+#body-a{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "main" "footer";
+}
+#body-b{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "header" "main" "footer";
+}
