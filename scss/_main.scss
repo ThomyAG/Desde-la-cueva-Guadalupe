@@ -71,13 +71,11 @@
                 display: flex;
                 justify-content: end;
             }
-            .form__button{
-                border-radius: 10%;
+            .button__resp{
+                @extend %.form__button;
                 padding: 0.8%;
                 margin: 2% 1.9% 0% 2%;
             }
         }
     }
-    
 }
-
