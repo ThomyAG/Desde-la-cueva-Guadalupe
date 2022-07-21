@@ -1,14 +1,14 @@
 h1{
+    @extend %h;
     font-size: 2rem;
-    margin: 1%;
 }
 h2{
+    @extend %h;
     font-size: 1.5rem;
-    margin: 1%;
 }
 h3{
+    @extend %h;
     font-size: 1rem;
-    margin: 1%;
 }
 #body-a{
     display: grid;
@@ -23,12 +23,12 @@ h3{
 // media queries 768
 @media only screen and (min-device-width:768px) {
     #body-a{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "nav nav" 
-    "main main" 
-    "footer footer";
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "nav nav" 
+        "main main" 
+        "footer footer";
     }
     #body-b{
         display: grid;
@@ -44,12 +44,12 @@ h3{
 // media querie desktop
 @media only screen and (min-device-width:1024px) {
     #body-a{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "nav nav nav" 
-    "main main main" 
-    "footer footer footer";
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "nav nav nav" 
+        "main main main" 
+        "footer footer footer";
     }
     #body-b{
         display: grid;

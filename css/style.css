@@ -1,15 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-.form__button {
-  background-color: #025e73;
-  color: #f2f2f2;
-  border-radius: 10%;
-  padding: 1.5%;
-  margin: 2% 0% 2% 2%; }
-
 * {
   font-family: 'Roboto', sans-serif;
   margin: 0%;
   padding: 0%; }
+
+h1, h2, h3 {
+  margin: 1%; }
 
 #body-a {
   display: grid;
@@ -74,16 +70,13 @@
         padding: 5%; } }
 
 h1 {
-  font-size: 2rem;
-  margin: 1%; }
+  font-size: 2rem; }
 
 h2 {
-  font-size: 1.5rem;
-  margin: 1%; }
+  font-size: 1.5rem; }
 
 h3 {
-  font-size: 1rem;
-  margin: 1%; }
+  font-size: 1rem; }
 
 #body-a {
   display: grid;
@@ -99,21 +92,31 @@ h3 {
   #body-a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "nav nav"  "main main"  "footer footer"; }
+    grid-template-areas: "nav nav" 
+ "main main" 
+ "footer footer"; }
   #body-b {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "nav nav" "header header" "main main"  "footer footer"; } }
+    grid-template-areas: "nav nav"
+ "header header"
+ "main main" 
+ "footer footer"; } }
 
 @media only screen and (min-device-width: 1024px) {
   #body-a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "nav nav nav"  "main main main"  "footer footer footer"; }
+    grid-template-areas: "nav nav nav" 
+ "main main main" 
+ "footer footer footer"; }
   #body-b {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "nav nav nav" "header header header" "main main main"  "footer footer footer"; } }
+    grid-template-areas: "nav nav nav"
+ "header header header"
+ "main main main" 
+ "footer footer footer"; } }
 
 .header {
   grid-area: header;
@@ -156,11 +159,11 @@ h3 {
           .main section form fieldset legend .fieldset__div {
             margin-bottom: 1%; }
       .main section form .form__button {
+        padding: 1.5%;
+        margin: 2% 0% 2% 2%;
         background-color: #025e73;
         color: #f2f2f2;
-        border-radius: 10%;
-        padding: 1.5%;
-        margin: 2% 0% 2% 2%; }
+        border-radius: 10%; }
 
 @media only screen and (min-device-width: 1024px) {
   .main section {
@@ -175,9 +178,12 @@ h3 {
     .main section .form__div {
       display: flex;
       justify-content: end; }
-    .main section .button__resp {
-      padding: 0.8%;
-      margin: 2% 1.9% 0% 2%; } }
+      .main section .form__div .form__button {
+        padding: 1.5%;
+        margin: 2% 2% 2% 2%;
+        background-color: #025e73;
+        color: #f2f2f2;
+        border-radius: 10%; } }
 
 .footer {
   background-color: #011f26;

@@ -1,7 +1,12 @@
-%.form__button {
+// mixin 
+@mixin btn ($pad, $marg) {
+    padding: $pad;
+    margin: $marg;
     background-color:$buttonColor;
     color:$principalColor;
     border-radius: 10%;
-    padding: 1.5%;
-    margin: 2% 0% 2% 2%;
+}
+// extends
+%h{
+    margin: 1%
 }

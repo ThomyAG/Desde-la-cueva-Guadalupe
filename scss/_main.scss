@@ -1,3 +1,10 @@
+// header
+.header{
+    grid-area: header;
+    width: 100%;
+    background-color: $principalColor;
+}
+// main
 .main{
     background-color: $principalColor;
     grid-area: main;
@@ -42,12 +49,7 @@
                 }
             }
             .form__button{
-                    background-color: $buttonColor;
-                    color: $principalColor;
-                    border-radius: 10%;
-                    padding: 1.5%;
-                    margin: 2% 0% 2% 2%;
-                
+                @include btn (1.5%, 2% 0% 2% 2% )
             }
         }
     }
@@ -70,12 +72,10 @@
             .form__div{
                 display: flex;
                 justify-content: end;
+                .form__button{
+                    @include btn (1.5%, 2% 2% 2% 2%)
+                }
             }
-            .button__resp{
-                @extend %.form__button;
-                padding: 0.8%;
-                margin: 2% 1.9% 0% 2%;
-            }
-        }
+        } 
     }
 }
