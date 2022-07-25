@@ -22,14 +22,6 @@ h3{
 }
 // media queries 768
 @media only screen and (min-device-width:768px) {
-    #body-a{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        "nav nav" 
-        "main main" 
-        "footer footer";
-    }
     #body-b{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -43,14 +35,6 @@ h3{
 
 // media querie desktop
 @media only screen and (min-device-width:1024px) {
-    #body-a{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: 
-        "nav nav nav" 
-        "main main main" 
-        "footer footer footer";
-    }
     #body-b{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
