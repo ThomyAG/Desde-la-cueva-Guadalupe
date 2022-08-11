@@ -78,7 +78,7 @@ h1, h2, h3, .main .main__section .main__card h2, .main .main__section .main__car
     grid-template-areas: "nav nav nav" "header header header" "main main main"  "footer footer footer"; } }
 
 .body__error {
-  background-image: url(/img/error_404.png); }
+  background-image: url(/img/error_404.webp); }
   .body__error .form__error {
     width: 100%;
     height: 100%;
