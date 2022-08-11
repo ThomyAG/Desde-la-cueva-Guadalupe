@@ -4,8 +4,16 @@
   margin: 0%;
   padding: 0%; }
 
-h1, h2, h3 {
-  margin: 1%; }
+h1, h2, h3, .main .main__section .main__card h2, .main .main__section .main__card h3, .main .main__section .main__cardxl h2 {
+  margin: 1%;
+  width: 98%; }
+
+.main .main__section .ext__parr, .main .main__section article .article__info, .main .main__section .main__card .card__parr, .main .main__section .main__cardxl .card__parr {
+  margin: 2%;
+  padding: 1%;
+  width: 96%;
+  text-align: start;
+  color: #011f26; }
 
 #body-a {
   display: grid;
@@ -17,66 +25,35 @@ h1, h2, h3 {
   grid-template-columns: 1fr;
   grid-template-areas: "nav" "header" "main" "footer"; }
 
-.nav {
-  list-style: none;
+.navbar {
   background-color: #011f26;
-  grid-area: nav;
-  width: 100%; }
-  .nav div {
-    text-align: center; }
-    .nav div img {
-      width: 20%;
-      margin: 1%; }
-  .nav ul li {
-    width: 80%; }
-    .nav ul li a {
-      text-decoration: none;
-      color: #f2f2f2;
-      font-size: 1.5rem;
-      margin: 1%; }
-
-@media only screen and (min-device-width: 768px) {
-  .nav div {
+  width: 100%;
+  grid-area: nav; }
+  .navbar .container-fluid {
+    display: flex;
+    justify-content: space-around;
     width: 100%; }
-    .nav div img {
-      width: 16%; }
-  .nav ul {
-    display: flex;
+    .navbar .container-fluid .navbar-brand {
+      width: 20%; }
+      .navbar .container-fluid .navbar-brand img {
+        width: 100%; }
+    .navbar .container-fluid .navbar-toggler {
+      background-color: #f2f2f2; }
+    .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+      color: #f2f2f2;
+      font-size: 1.5rem; }
+
+@media only screen and (min-device-width: 992px) {
+  .navbar .container-fluid .navbar-brand img {
+    width: 20%; }
+  .navbar .collapse .navbar-nav {
     width: 100%;
-    justify-content: space-between;
-    list-style: none;
-    align-items: center;
-    text-align: center; } }
-
-@media only screen and (min-device-width: 1024px) {
-  .nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    .nav div {
-      width: 10%;
-      padding: 1%; }
-      .nav div img {
-        width: 40%; }
-    .nav ul {
-      list-style: none;
-      display: flex;
-      width: 85%;
-      justify-content: space-between;
-      align-items: center; }
-      .nav ul li a:hover {
-        border-radius: 2.5%;
-        background-color: #037f8c;
-        padding: 5%; } }
-
-h1 {
-  font-size: 2rem; }
-
-h2 {
-  font-size: 1.5rem; }
-
-h3 {
-  font-size: 1rem; }
+    justify-content: space-around; }
+    .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+      border-radius: 2.5%;
+      background-color: #037f8c;
+      padding: 5%; } }
 
 #body-a {
   display: grid;
@@ -94,11 +71,23 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "nav nav" "header header" "main main"  "footer footer"; } }
 
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-device-width: 992px) {
   #body-b {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "nav nav nav" "header header header" "main main main"  "footer footer footer"; } }
+
+.body__error {
+  background-image: url(/img/error_404.png); }
+  .body__error .form__error {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .body__error .form__error .boton__error {
+      padding: 2% 5% 2% 5%;
+      font-size: 1rem; }
 
 .header {
   grid-area: header;
@@ -109,60 +98,244 @@ h3 {
   background-color: #f2f2f2;
   grid-area: main;
   padding-bottom: 2%; }
-  .main section {
+  .main .main__section {
     width: 100%; }
-    .main section article {
+    .main .main__section .ext__parr {
+      color: #011f26;
+      font-size: 1rem; }
+    .main .main__section .alerta__parr {
+      font-size: 1rem;
+      margin: 2%;
+      padding: 1%;
+      width: 96%;
+      text-align: start; }
+    .main .main__section article {
       width: 90%;
       margin: 0 auto; }
-      .main section article img {
+      .main .main__section article img {
         width: 90%;
         margin: auto; }
-    .main section p {
+      .main .main__section article .h__alert {
+        color: red;
+        font-size: 2rem; }
+      .main .main__section article .main__img {
+        width: 98%;
+        display: flex;
+        justify-items: center;
+        border: 5px solid #e6e6eb;
+        border-radius: 1%; }
+      .main .main__section article .img__info {
+        width: 98%;
+        display: flex;
+        justify-items: center;
+        border: 5px solid #e6e6eb;
+        border-radius: 1%; }
+    .main .main__section .main__card {
+      width: 90%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      margin: 2%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      border-style: solid;
+      border-color: #025e73;
+      border-radius: 7%;
+      background-color: #e6e6eb; }
+      .main .main__section .main__card .card__img {
+        width: 90%;
+        margin-top: 10%;
+        margin-bottom: 10%; }
+      .main .main__section .main__card .card__parr {
+        font-size: 1.1rem; }
+      .main .main__section .main__card h2 {
+        text-align: center;
+        font-size: 1.7rem; }
+      .main .main__section .main__card h3 {
+        text-align: center;
+        font-size: 1.7rem; }
+      .main .main__section .main__card .alerta__parr {
+        font-size: 1rem;
+        margin: 2%;
+        padding: 1%;
+        width: 96%;
+        text-align: start; }
+    .main .main__section .main__cardxl {
+      width: 90%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      margin: 2%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      border-style: solid;
+      border-color: #025e73;
+      border-radius: 7%;
+      background-color: #e6e6eb; }
+      .main .main__section .main__cardxl .card__img {
+        margin-top: 10%;
+        margin-bottom: 10%; }
+      .main .main__section .main__cardxl .card__parr {
+        color: red;
+        font-size: 1.5rem; }
+      .main .main__section .main__cardxl h2 {
+        text-align: center;
+        font-size: 1.7rem; }
+      .main .main__section .main__cardxl .alerta__parr {
+        font-size: 1rem;
+        margin: 2%;
+        padding: 1%;
+        width: 96%;
+        text-align: start; }
+      .main .main__section .main__cardxl a {
+        text-decoration: none;
+        border: solid;
+        background-color: #011f26;
+        color: #e6e6eb;
+        padding: 1%; }
+    .main .main__section p {
       font-size: 1.0rem;
       width: 98%;
       margin: 1%; }
-    .main section form {
+    .main .main__section .main__form {
       width: 98%;
       margin: 1%; }
-      .main section form fieldset {
+      .main .main__section .main__form .formulario__fieldset {
         width: 95%;
         margin: 1%;
-        padding: 1%; }
-        .main section form fieldset legend {
+        padding: 1%;
+        border: 1px solid;
+        border-radius: 1.5%; }
+        .main .main__section .main__form .formulario__fieldset .formulario__legend {
           font-size: 1.5rem; }
-          .main section form fieldset legend .form__label {
-            width: 20%;
-            margin: 1%;
-            font-size: 1rem; }
-          .main section form fieldset legend .form__input {
-            width: 95%;
-            margin: 1%;
-            padding: 1%; }
-          .main section form fieldset legend .fieldset__div {
-            margin-bottom: 1%; }
-      .main section form .form__button {
-        padding: 1.5%;
-        margin: 2% 0% 2% 2%;
-        background-color: #025e73;
-        color: #f2f2f2;
-        border-radius: 10%; }
+        .main .main__section .main__form .formulario__fieldset .formulario__label {
+          width: 20%;
+          margin: 1%;
+          font-size: 1rem; }
+        .main .main__section .main__form .formulario__fieldset .formulario__input {
+          width: 95%;
+          margin: 1%;
+          padding: 1%; }
+        .main .main__section .main__form .formulario__fieldset .fieldset__divi {
+          margin-bottom: 1%; }
+    .main .main__section .formulario__button {
+      padding: 1.5%;
+      margin: 2% 0% 2% 2%;
+      background-color: #025e73;
+      color: #f2f2f2;
+      border-radius: 10%; }
 
-@media only screen and (min-device-width: 1024px) {
-  .main section {
-    display: flex;
+@media only screen and (min-device-width: 768px) {
+  .body__error .form__error .boton__error {
+    padding: 3% 5% 3% 5%;
+    font-size: 1.5rem; }
+  .main #center {
+    justify-content: center; }
+  .main .main__section {
     width: 100%;
-    flex-wrap: wrap; }
-    .main section article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .main .main__section .main__card {
       width: 45%;
-      margin: 2%; }
-    .main section #art-3 {
-      order: 3; }
-    .main section .form__div {
+      padding-top: 5%;
+      padding-bottom: 5%;
+      margin: 2%;
       display: flex;
-      justify-content: end; }
-      .main section .form__div .form__button {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      border-style: solid;
+      border-color: #025e73;
+      border-radius: 7%;
+      background-color: #e6e6eb; }
+    .main .main__section h2 {
+      text-align: center;
+      font-size: 1.7rem; }
+    .main .main__section h3 {
+      text-align: center;
+      font-size: 1.7rem; }
+    .main .main__section .alerta__parr {
+      font-size: 1rem;
+      margin: 2%;
+      padding: 1%;
+      width: 96%;
+      text-align: start; }
+    .main .main__section .main__article .img__info {
+      width: 70%;
+      display: flex;
+      justify-items: center;
+      border: 10px solid #e6e6eb;
+      border-radius: 1%; }
+    .main .main__section .main__article .main__img {
+      width: 98%;
+      border: 10px solid #e6e6eb;
+      border-radius: 1%; }
+    .main .main__section .main__form {
+      width: 65%; } }
+
+@media only screen and (min-device-width: 992px) {
+  .body__error .form__error .boton__error {
+    font-size: 2rem; }
+  .header h1 {
+    font-size: 2.5rem; }
+  .main .main__section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    .main .main__section h2 {
+      font-size: 2.2rem; }
+    .main .main__section .alerta__parr {
+      font-size: 1.5rem;
+      margin: 1%;
+      padding: 1%;
+      width: 96%;
+      text-align: start; }
+    .main .main__section #art-3 {
+      order: 3; }
+    .main .main__section .main__article h3 {
+      width: 100%;
+      font-size: 2.1rem; }
+    .main .main__section .main__card {
+      width: 31%;
+      margin: 0.5%; }
+      .main .main__section .main__card h2, .main .main__section .main__card h3 {
+        font-size: 2.1rem; }
+      .main .main__section .main__card .card__parr {
+        font-size: 1.5rem; }
+      .main .main__section .main__card .card__img {
+        margin-top: 5%;
+        margin-bottom: 5%; }
+    .main .main__section .main__cardxl {
+      width: 85%; }
+      .main .main__section .main__cardxl .card__img {
+        margin-top: 1%;
+        margin-bottom: 1%;
+        border: 10px solid #f2f2f2; }
+    .main .main__section .main__form {
+      width: 65%;
+      margin: 1%; }
+      .main .main__section .main__form .form__fieldset {
+        width: 100%;
+        margin: 1%;
+        padding: 2%; }
+        .main .main__section .main__form .form__fieldset .form__legend {
+          font-size: 1.5rem; }
+        .main .main__section .main__form .form__fieldset .form__label {
+          margin: 1%;
+          font-size: 1.2rem; }
+        .main .main__section .main__form .form__fieldset .form__input {
+          margin: 1%;
+          padding: 1.5%; }
+    .main .main__section .form__div {
+      width: 100%;
+      text-align: end; }
+      .main .main__section .form__div .form__button {
         padding: 1.5%;
-        margin: 2% 2% 2% 2%;
+        margin: 2% 0% 2% 5%;
         background-color: #025e73;
         color: #f2f2f2;
         border-radius: 10%; } }
@@ -187,6 +360,6 @@ h3 {
   .footer ul {
     width: 20%; } }
 
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-device-width: 992px) {
   .footer ul {
     width: 10%; } }

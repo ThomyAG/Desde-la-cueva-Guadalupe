@@ -6,7 +6,30 @@
     color:$principalColor;
     border-radius: 10%;
 }
-// extends
+@mixin card($width, $padt, $padb, $marg) {
+    width: $width;
+    padding-top: $padt;
+    padding-bottom: $padb;
+    margin: $marg;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-style: solid;
+    border-color: $buttonColor;    
+    border-radius: 7%;
+    background-color: $cardColor;
+    }
+
+    // extends
 %h{
     margin: 1%;
+    width: 98%;
+}
+%pCard{
+    margin: 2%;
+    padding: 1%;
+    width: 96%;
+    text-align: start;
+    color: $secondaryColor;
 }

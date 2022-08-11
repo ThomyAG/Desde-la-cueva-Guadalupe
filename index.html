@@ -4,38 +4,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pronostico - desde la cueva</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <meta name="description" content="Descubri el pronostico en tu zona, enterate de las alertas y ultimas noticias del clima a nivel mundial">
     <meta name="robots" content="index">
     <meta name="keywords" content="pronostico, clima, rios, huracanes">
+    <meta name="author" content="Thomas Agustin Guadalupe">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <!-- ends head -->
 <body id="body-b">
 <!-- begins nav -->
-    <nav class="nav">
-        <div class="nav__div">
-            <a href="index.html">
-            <img class="nav__img" src="img/logo.png" alt="la imagen muestra el logo de pronostico desde la cueva"></a>
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="logo del sitio"></a>
+        <button class="navbar-toggler" id="icon-color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" id="icon-color"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./sections/pronostico_extendido.html">Pronostico Extendido</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./sections/rios.html">Rios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./sections/alertas.html">Alertas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./sections/contacto.html">Contacto</a>
+                </li>
+            </ul>
         </div>
-        <ul class="nav__ul">
-            <li class="nav__li">
-                <a class="nav__link" href="index.html">Inicio</a>
-            </li>
-            <li class="nav__li">
-                <a class="nav__link" href="sections/pronostico_extendido.html">Pronostico Extendido</a>
-            </li>
-            <li class="nav__li">
-                <a class="nav__link" href="sections/rios.html">Rios</a>
-            </li>
-            <li class="nav__li">
-                <a class="nav__link" href="sections/alertas.html">Alertas</a>
-            </li>
-            <li class="nav__li">
-                <a class="nav__link" href="sections/contacto.html">Contacto</a>
-            </li>
-        </ul>
-    </nav>
+    </div>
+</nav>
 <!-- ends nav -->
     <!-- begins main -->
     <header class="header">
@@ -43,22 +50,28 @@
     </header>
     <main class="main">
         <section class="main__section">
-            <article class="main__article">
+            <article class="main__card">
                 <h2>Pronostico Actual</h2>
-                <img class="main__img" src="img/pronostico_actual.png" alt="En la imagen se puede ver el pronostico actual de la region">
+                <img class="card__img" src="img/pronostico_actual.png" alt="En la imagen se puede ver el pronostico actual de la region">
+                <p class="card__parr">Este es el clima pronostico actual en tu zona.</p>
             </article>
-            <article class="main__article">
+            <article class="main__card">
                 <h2>Pronostico de mañana</h2>
-                <img class="main__img" src="img/pronostico_de_manana.png" alt="En la imagen se puede ver el pronostico del dia siguiente">
+                <img class="card__img" src="img/pronostico_de_manana.png" alt="En la imagen se puede ver el pronostico del dia siguiente">
+                <p class="card__parr">Asi va a estar el pronostico mañana en tu zona.</p>
             </article>
-            <article class="main__article">
-                <h2>Ultimas noticias del clima</h2>
-                <img class="main__img" src="img/ultimas_noticias_del_clima.png" alt="En la imagen se puede ver una noticia relevante del clima a nivel mundial">
-            </article>
-            <article class="main__article">
+            <article class="main__card">
                 <h2>Rios</h2>
-                <img class="main__img" src="img/rios.png" alt="En la imagen se puede ver una imagen del estado actual de los rios">
+                <img class="card__img" src="img/rios.png" alt="En la imagen se puede ver una imagen del estado actual de los rios">
+                <p class="card__parr">Estas viendo la altura de los rios, crecidas y bajadas.</p>
             </article>
+            <article class="main__cardxl">
+                <h2>Alertas activas</h2>
+                <img class="card__img" src="img/ultimas_noticias_del_clima.png" alt="En la imagen se puede ver una noticia relevante del clima a nivel mundial">
+                <p class="card__parr"><b>ATENCION MEXICO:</b> El huracán Bonnie se intensifica a categoría 3 frente a costas de México y el Pacífico.</p>
+                <a href="/sections/alertas.html">Mas info -> </a>
+            </article>
+            <p class="ext__parr">No deje de visitar nuestar redes sociales o suscribirse al servicio de información por mail, para recibir las actualizaciones cuando más la necesite.</p>
         </section>
     </main>
     <!-- ends main -->
@@ -84,5 +97,7 @@
         </section>
     </footer>
     <!-- ends footer -->
+<!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

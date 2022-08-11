@@ -1,75 +1,58 @@
-.nav{
-    list-style: none;
+.navbar{
     background-color: $secondaryColor;
-    grid-area: nav;
     width: 100%;
-    div{
-        text-align: center;
-        img{
+    grid-area: nav;
+    .container-fluid{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        .navbar-brand{
             width: 20%;
-            margin: 1%;
+            img{
+                width: 100%;
+            }
         }
-    }
-    ul{
-        li{
-            width: 80%;
-            a{
-                text-decoration: none;
-                color: $principalColor;
-                font-size: 1.5rem;
-                margin: 1%;
+        .navbar-toggler{
+            background-color: $principalColor;
+        }
+        .collapse{
+            .navbar-nav{
+                .nav-item{
+                    .nav-link{
+                        color: $principalColor;
+                        font-size: 1.5rem;
+                    }
+                }
             }
         }
     }
 }
 
-// media queries 768
-@media only screen and (min-device-width:768px) {
-    .nav{
-        div{
-            width: 100%;
-            img{
-                width: 16%;
-            }
-        }
-        ul{
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-            list-style: none;
-            align-items: center;
-            text-align: center;
-        }
-    }
-}
 // media queries desktop
-@media only screen and (min-device-width:1024px) {
-    .nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        div{
-            width: 10%;
-            padding: 1%;
-            img{
-                width: 40%;
+@media only screen and (min-device-width:992px){
+    .navbar{
+        .container-fluid{
+            .navbar-brand{
+                img{
+                    width: 20%;
+                }
             }
         }
-        ul{
-            list-style: none;
-            display: flex;
-            width: 85%;
-            justify-content: space-between;
-            align-items: center;
-            li{
-                a{
-                    &:hover{
-                        border-radius: 2.5%;
-                        background-color:$hoverColor;
-                        padding: 5%;
+        .collapse{
+            .navbar-nav{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                    .nav-item{
+                        .nav-link{
+                            &:hover{
+                                border-radius: 2.5%;
+                                background-color: $hoverColor;
+                                padding: 5%;
+                            }
+                        }
                     }
                 }
             }
-        }            
+        }
     }
-}

@@ -1,3 +1,18 @@
+// error 404
+.body__error{
+    background-image: url(/img/error_404.png);
+    .form__error{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .boton__error{
+            padding: 2% 5% 2% 5%;
+            font-size: 1rem;
+        }
+    }
+}
 // header
 .header{
     grid-area: header;
@@ -9,8 +24,20 @@
     background-color: $principalColor;
     grid-area: main;
     padding-bottom: 2%;
-    section{
+    .main__section{
         width: 100%;
+        .ext__parr{
+            @extend %pCard;
+            color: $secondaryColor;
+            font-size: 1rem;
+        }
+        .alerta__parr{
+            font-size: 1rem;
+            margin: 2%;
+            padding: 1%;
+            width: 96%;
+            text-align: start;
+        }
         article{
             width: 90%;
             margin: 0 auto;
@@ -18,64 +45,273 @@
                     width: 90%;
                     margin: auto;
                 }
+                .h__alert{
+                    color: $alertColor2;
+                    font-size: 2rem
+                }
+                .article__info{
+                    @extend %pCard;
+                }
+                .main__img{
+                    width: 98%;
+                    display: flex;
+                    justify-items: center;
+                    border: 5px solid $cardColor;
+                    border-radius: 1%;
+                }
+                .img__info{
+                    width: 98%;
+                    display: flex;
+                    justify-items: center;
+                    border: 5px solid $cardColor;
+                    border-radius: 1%;
+                }
+            }
+        .main__card{
+            @include card (90%, 5%, 5%, 2%);
+            .card__img{
+                width: 90%;
+                margin-top: 10%;
+                margin-bottom: 10%;
+            }
+            .card__parr{
+                @extend %pCard;
+                font-size: 1.1rem;
+            }
+            h2{
+                @extend %h;
+                text-align: center;
+                font-size: 1.7rem;
+            }
+            h3{
+                @extend %h;
+                text-align: center;
+                font-size: 1.7rem
+            }
+            .alerta__parr{
+                font-size: 1rem;
+                margin: 2%;
+                padding: 1%;
+                width: 96%;
+                text-align: start;
+            }
+        }
+        .main__cardxl{
+            @include card (90%, 5%, 5%, 2%);
+            .card__img{
+                margin-top: 10%;
+                margin-bottom: 10%;
+                }
+            .card__parr{
+                @extend %pCard;
+                color: $alertColor2;
+                font-size: 1.5rem;
+                }
+            h2{
+                @extend %h;
+                text-align: center;
+                font-size: 1.7rem;
+            }
+            .alerta__parr{
+                font-size: 1rem;
+                margin: 2%;
+                padding: 1%;
+                width: 96%;
+                text-align: start;
+            }
+            a {
+                text-decoration: none;
+                border: solid;
+                background-color:$secondaryColor;
+                color: $cardColor;
+                padding: 1%;
+            }
         }
         p{
             font-size: 1.0rem;
             width: 98%;
             margin: 1%;
         }
-        form{
+        .main__form{
             width: 98%;
             margin: 1%;
-            fieldset{
+            .formulario__fieldset{
                 width: 95%;
                 margin: 1%;
                 padding: 1%;
-                legend{
+                border: 1px solid;
+                border-radius: 1.5%;
+                .formulario__legend{
                     font-size: 1.5rem;
-                    .form__label{
-                        width: 20%;
-                        margin: 1%;
-                        font-size: 1rem;
-                    }
-                    .form__input{
-                        width: 95%;
-                        margin: 1%;
-                        padding: 1%;
-                    }
-                    .fieldset__div{
-                        margin-bottom: 1%;
-                    }
+                }
+                .formulario__label{
+                    width: 20%;
+                    margin: 1%;
+                    font-size: 1rem;
+                }
+                .formulario__input{
+                    width: 95%;
+                    margin: 1%;
+                    padding: 1%;
+                }
+                .fieldset__divi{
+                    margin-bottom: 1%;
                 }
             }
-            .form__button{
-                @include btn (1.5%, 2% 0% 2% 2% )
+        }
+        .formulario__button{
+            @include btn (1.5%, 2% 0% 2% 2% )
+        }
+    }
+}
+
+// media queries tablet
+@media only screen and (min-device-width:768px) {
+    .body__error{
+        .form__error{
+            .boton__error{
+                padding: 3% 5% 3% 5%;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .main{
+        #center{
+            justify-content: center;
+        }
+        .main__section{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .main__card{
+                @include card (45%, 5%, 5%, 2%);
+            }
+            h2{
+                text-align: center;
+                font-size: 1.7rem;
+            }
+            h3{
+                text-align: center;
+                font-size: 1.7rem;                
+            }
+            .alerta__parr{
+                font-size: 1rem;
+                margin: 2%;
+                padding: 1%;
+                width: 96%;
+                text-align: start;
+            }
+            .main__article{
+                .img__info{
+                    width: 70%;
+                    display: flex;
+                    justify-items: center;
+                    border: 10px solid $cardColor;
+                    border-radius: 1%;
+                }
+                .main__img{
+                    width: 98%;
+                    border: 10px solid $cardColor;
+                    border-radius: 1%;
+                }
+            }
+            .main__form{
+                width: 65%;
             }
         }
     }
 }
 
+
 // media queries desktop
-@media only screen and (min-device-width:1024px) {
+@media only screen and (min-device-width:992px) {
+    .body__error{
+        .form__error{
+            .boton__error{
+                font-size: 2rem;
+            }
+        }
+    }
+    .header{
+        h1{
+            font-size: 2.5rem;
+        }
+    }
     .main{
-        section{
-            display: flex;
+        .main__section{
             width: 100%;
+            display: flex;
             flex-wrap: wrap;
-            article{
-                width: 45%;
-                margin: 2%;
+            justify-content: space-evenly;
+            h2{
+                font-size: 2.2rem;
+            }
+            .alerta__parr{
+                font-size: 1.5rem;
+                margin: 1%;
+                padding: 1%;
+                width: 96%;
+                text-align: start;
             }
             #art-3{
                 order: 3;
             }
-            .form__div{
-                display: flex;
-                justify-content: end;
-                .form__button{
-                    @include btn (1.5%, 2% 2% 2% 2%)
+            .main__article{
+                h3{
+                    width: 100%;
+                    font-size: 2.1rem;
                 }
             }
-        } 
-    }
+            .main__card{
+                width: 31%;
+                margin: 0.5%;
+                h2,h3{
+                    font-size: 2.1rem;;
+                }
+                .card__parr{
+                    font-size: 1.5rem;
+                }
+                .card__img{
+                    margin-top: 5%;
+                    margin-bottom: 5%;
+                }
+            }
+            .main__cardxl{
+                width: 85%;
+                .card__img{
+                    margin-top: 1%;
+                    margin-bottom: 1%;
+                    border: 10px solid $principalColor
+                }
+            }
+            .main__form{
+                width: 65%;
+                margin: 1%;
+                .form__fieldset{
+                    width: 100%;
+                    margin: 1%;
+                    padding: 2%;
+                    .form__legend{
+                        font-size: 1.5rem;
+                    }
+                    .form__label{
+                        margin: 1%;
+                        font-size: 1.2rem;
+                    }
+                    .form__input{
+                        margin: 1%;
+                        padding: 1.5%;
+                    }
+                }
+            }
+            .form__div{
+                width: 100%;
+                text-align: end;
+                .form__button{
+                    @include btn (1.5%, 2% 0% 2% 5%);
+                }
+            }
+        }
+    } 
 }

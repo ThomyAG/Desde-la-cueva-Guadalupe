@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pronostico - desde la cueva</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <meta name="description" content="Vas a enterarte de las alertas activas del clima">
     <meta name="keywords" content="alertas, huracanes, huracan, tifon, inundaciones, granizo, lluvia torrencial">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
@@ -12,45 +13,62 @@
 <!-- ends head -->
 <body id="body-b">
 <!-- begin nav -->
-    <nav class="nav">
-        <div class="nav__div">
-            <a href="../index.html">
-            <img class="nav__img" src="../img/logo.png" alt="la imagen muestra el logo de pronostico desde la cueva"></a>
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html"><img src="../img/logo.png" alt="logo del sitio"></a>
+        <button class="navbar-toggler" id="icon-color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" id="icon-color"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pronostico_extendido.html">Pronostico Extendido</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="rios.html">Rios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./alertas.html">Alertas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
         </div>
-        <ul class="nav__ul">
-            <li class="nav__li">
-                <a class="nav__link" href="../index.html">Inicio</a>
-            </li>
-            <li class="nav__li">
-                <a class="nav__link" href="../sections/pronostico_extendido.html">Pronostico Extendido</a>
-            </li>
-            <li class="nav__li">
-                <a class="nav__link" href="../sections/rios.html">Rios</a>
-            </li>
-            <li class="nav__li">
-                <a class="nav__link" href="../sections/alertas.html">Alertas</a>
-            </li>
-            <li class="nav__li">
-                <a class="nav__link" href="../sections/contacto.html">Contacto</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- ends nav -->
-    <!-- begins header -->
+    </div>
+</nav>
+<!-- ends nav -->
+<!-- begins header -->
     <header class="header">
-        <h1>Alertas</h1>
+        <h1><b> Alertas </b></h1>
     </header>
     <!-- ends header -->
     <!-- begins main -->
     <main class="main">
         <section class="main__section">
             <article class="main__article">
-                <h2>Alerta activa</h2>
-                <img class="main__img" src="../img/alerta.png" alt="En la imagen se muestra la alerta activa de la zona configurada">
+                <h2 class="h__alert">Alerta activa</h2>
+                <p class="alerta__parr"> <b>A pesar de estar alejándose del territorio mexicano, Bonnie se continúa intensificando y provocará intensas lluvias en varias entidades.</b></p>
+                <img class="img__info" src="../img/alerta.png" alt="En la imagen se muestra la alerta activa de la zona configurada">
+                <p class="alerta__parr">El Servicio Meteorológico Nacional ha informado que <b>Bonnie se ha intensificado a huracán categoría 3</b> en la escala Saffir-Simpson, frente a las costa mexicanas del Oceáno Pacífico. El ciclón se ubica a 350 km al sur-suroeste de Punta San Telmo, en Michoacán y a 400 km al suroeste de Zihuatanejo, en Guerrero, con vientos sostenidos de 185 km por hora y rachas de hasta 220 km por hora. Provocará intensas lluvias en entidades como Jalisco, Colima, Michoacán, Guerrero y Oaxaca.</p>
+                <p class="alerta__parr">Bonnie mantiene una trayectoria hacia el nor-noroeste (280°) a una velocidad aproximada de 22 km por hora, es decir, se aleja de forma gradual del territorio nacional. Sin embargo, se estima que su presencia genere precipitaciones en el occidente, centro y sur del país. Ante el incremento de cuerpos de agua como ríos y arroyos, así como el aumento en el riesgo de deslaves e inundaciones, las autoridades piden extremar precauciones a la población que habite las entidades antes mencionadas y atender las indicaciones emitidas por el Sistema Nacional de Protección Civil.</p>
             </article>
             <article class="main__article">
-                <h3>Mapa de alerta</h3>
+                <h3>Las regiones afectadas:</h3>
+                <p class="alerta__parr"> <b>Pacífico Centro:</b>Ambiente fresco con bancos de niebla en zonas serranas durante la mañana, y cálido por la tarde en la región. Viento con rachas de 60 a 70 km/h y oleaje de 2 a 4 metros de altura en costas de Jalisco (sur), Colima y Michoacán.</p>
+                <p class="alerta__parr"><b>Pacífico Sur:</b> Por la tarde, ambiente cálido en la región y caluroso en costas. Viento con rachas de 60 a 70 km/h y oleaje de 2 a 4 metros de altura en costas de Guerrero (occidente) y viento con rachas de 50 a 60 km/h en Oaxaca y Chiapas.</p>
+                <p class="alerta__parr"> <b>Pacífico Norte:</b> Ambiente templado por la mañana con cielo medio nublado en Sinaloa y con nubosidad dispersa en Sonora; ambiente caluroso a muy caluroso e incremento de la nubosidad durante la tarde, con lluvias puntuales fuertes en Sinaloa, e intervalos de chubascos en Sonora, acompañados de descargas eléctricas y posible caída de granizo. Viento del sur y suroeste de 10 a 25 km/h con rachas de 45 km/h.</p>
+            </article>
+            <article class="main__article">
+                <h2>Mapa de alerta</h2>
                 <img class="main__img" src="../img/mapa_alerta.png" alt="En la imagen se muestra en el mapa la alerta activa de la zona">
+                <p class="alerta__parr">El nuevo sistema de alerta no solo implica un cambio en la elaboración de los alertas, sino que también modifica la forma en la que los comunicamos. Su mayor diferencia se encuentra en que este nuevo sistema es más visual, lo que resulta ventajoso al momento de identificar rápidamente una amenaza. Pero también conlleva el desafío de comunicarlo oralmente, por ejemplo, en una entrevista telefónica. Por eso, debemos comprender a fondo esta herramienta para ser capaces de transmitir a la población un mensaje de calidad y oportuno.</p>
+                <p class="alerta__parr">Este documento pretende constituirse en un material de referencia para las personas que diariamente o de manera eventual comunican la información meteorológica a los diversos tipos de usuarios. Todo aquel que se encuentre en la situación de informar sobre un alerta, un aviso a corto plazo o una advertencia debe haber leído este manual y ajustarse a lo que en él se define.</p>
+                <p class="alerta__parr">De esta forma, buscamos asegurar un alto nivel de calidad de las comunicaciones institucionales, con información unificada y consolidada en el organismo.</p>
             </article>
         </section>
         <!-- ends section -->
@@ -78,5 +96,6 @@
         </section>
     </footer>
     <!-- ends footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

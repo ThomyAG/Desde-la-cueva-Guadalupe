@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pronostico - desde la cueva</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <meta name="description" content="Aca vas a encontrar el pronostico al detalle del dia proximo y extendido para toda la semana">
     <meta name="keywords" content="pronostico extendido, clima, zona, pronostico del dia, pronostico de la semana">
     <link rel="shortcut icon" href="../img/favicon.png">
@@ -12,29 +13,34 @@
 <!-- ends head -->
 <body id="body-b">
 <!-- begin nav -->
-    <nav class="nav">
-        <div class="nav__div">
-            <a href="../index.html">
-            <img class="nav__img" src="../img/logo.png" alt="la imagen muestra el logo de pronostico desde la cueva"></a>
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html"><img src="../img/logo.png" alt="logo del sitio"></a>
+        <button class="navbar-toggler" id="icon-color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" id="icon-color"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pronostico_extendido.html">Pronostico Extendido</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="rios.html">Rios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./alertas.html">Alertas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
         </div>
-        <ul class="nav__ul">
-            <li class="nav__li">
-                <a class="nav__link" href="../index.html">Inicio</a>
-            </li>
-            <li class="nav__li">
-                <a class="nav__link" href="../sections/pronostico_extendido.html">Pronostico Extendido</a>
-            </li>
-            <li class="nav__li">
-                <a class="nav__link" href="../sections/rios.html">Rios</a>
-            </li>
-            <li class="nav__li">
-                <a class="nav__link" href="../sections/alertas.html">Alertas</a>
-            </li>
-            <li class="nav__li">
-                <a class="nav__link" href="../sections/contacto.html">Contacto</a>
-            </li>
-        </ul>
-    </nav>
+    </div>
+</nav>
 <!----- ends nav ----->
 <!-- begins header -->
     <header class="header">
@@ -44,17 +50,31 @@
     <!-- begins main -->
     <main class="main">
         <section class="main__section">
-            <article class="main__article">
+            <article class="main__card">
                 <h2>Pronostico para mañana</h2>
-                <img class="main__img" src="../img/pronostico_de_manana.png" alt="En la imagen se muestra el pronostico de manana">
+                <img class="card__img" src="../img/pronostico_de_manana.png" alt="En la imagen se muestra el pronostico de manana">
+                <p class="card__parr">El pronostico para mañana en detalle.</p>
+            </article>
+            <article class="main__card">
+                <h2>Pronostico para pasado mañana</h2>
+                <img class="card__img" src="../img/pronostico_para_pasado_manana.png" alt="En la imagen se muestra el pronostico para la semana">
+                <p class="card__parr">El pronostico en tu zona para pasado mañana al detalle.</p>
+            </article>
+            <article class="main__card">
+                <h2>Pronostico para la semana</h2>
+                <img class="card__img" src="../img/pronostico_para_la_semana.png" alt="En la imagen se muestra el pronostico para la semana">
+                <p class="card__parr">Si necesitas saber como va a estar el pronostico el resto de la semana, lo vas a poder ver al detalle.</p>
             </article>
             <article class="main__article">
-                <h3>Pronostico para pasado mañana</h3>
-                <img class="main__img" src="../img/pronostico_para_pasado_manana.png" alt="En la imagen se muestra el pronostico para la semana">
-            </article>
-            <article class="main__article">
-                <h3>Pronostico para la semana</h3>
-                <img class="main__img" src="../img/pronostico_para_la_semana.png" alt="En la imagen se muestra el pronostico para la semana">
+                <h3>Noticias Mundiales: OMM da a conocer el estado del clima en América Latina y el Caribe 2021</h3>
+                <p class="alerta__parr">Este viernes 22 de julio, la Organización Meteorológica Mundial dio a conocer un nuevo informe del "Estado del clima en América Latina y el Caribe". ¿Cuáles son las novedades con respecto al cambio climático en estas regiones?</p>
+                <p class="alerta__parr">En 2021 continuó la tendencia al aumento de la temperatura global, año que se situó entre el quinto y el séptimo más cálido desde que se tienen registros —informa la Organización Meteorológica Mundial (OMM)—, y hace énfasis en la situación de América Latina y el Caribe, que experimentó una tendencia análoga.</p>
+                <p class="alerta__parr">A esto se suma que 2021 fue el séptimo año consecutivo en el que se formó una tormenta tropical antes del inicio de temporada de huracanes en el Atlántico, siendo esta la tercera más activa jamás registrada, con 21 tormentas con nombre.</p>
+                <p class="alerta__parr">El principal objetivo del informe El estado del clima en América Latina y el Caribe 2021, presentado este viernes 22 por la OMM, es el de promover “la consolidación y la ampliación de los sistemas de alerta temprana a través de las predicciones que tienen en cuenta los impactos y las alertas de fenómenos meteorológicos, hidrológicos y climáticos extremos basadas en los riesgos.”</p>
+                <p class="alerta__parr">El informe revela que lo primero a tener en cuenta es que la tasa promedio del aumento de temperatura en la región fue de 0,2 °C por década entre 1991 y 2021, comparado con el aumento de 0,1 °C por década en el período 1961-1990: aunque parezca una diferencia pequeña, es muy significativa, evidencia el Dr. Wenjian Zhang, Subsecretario General de la OMM. "En 2021, la temperatura media con respecto a la referencia de 1981-2010 fue 0,5 °C más cálida en México, 0,35 °C más cálida en América Central y 0,36 °C más cálida en América del Sur", revela el informe.</p>
+                <p class="alerta__parr">A diferencia de la distribución homogénea del calentamiento, la precipitación puede variar bastante en una misma región. Y esto ocurre sobre todo en América Latina, que se presentan precipitaciones sobre lo normal en Colombia o en el Amazonas central; sin embargo, en zonas como en la cuenca del Paraná-La Plata o en la mayor parte de Chile, se encuentran bajo lo normal. En efecto, se destaca principalmente la sequía extrema que vive Chile hace 15 años.</p>
+                <p class="alerta__parr">Por otro lado, los glaciares de Los Andes han retrocedido durante décadas: estas tasas observadas de pérdida de masa de los glaciares figuran entre las tasas de pérdida de masa regionales más altas a nivel mundial.</p>
+                <p class="alerta__parr">¿Que se puede hacer ante esta crisis? El informe destaca que "la reducción del riesgo de desastres es fundamental para la justicia climática y el desarrollo resistente al clima". En América Central y América del Sur "se necesitan servicios climáticos, sistemas de alerta temprana de extremo a extremo e inversiones sostenibles" que ayuden a enfrentar los riesgos relativos a eventos extremos como olas de calor o inundaciones.</p>
             </article>
         </section>
         <!----- ends section ----->
@@ -82,5 +102,6 @@
         </section>
     </footer>
     <!----- ends footer ----->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
